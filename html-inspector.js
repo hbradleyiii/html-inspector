@@ -1760,7 +1760,7 @@ module.exports = {
       var el
       // scripts at the end of the elements are safe
       while (el = elements.pop()) {
-        if (el.nodeName.toLowerCase() != "script") break
+        if (el.nodeName.toLowerCase() != "script" && el.nodeName.toLowerCase() != "noscript") break
       }
       elements.forEach(function(el) {
         if (el.nodeName.toLowerCase() == "script") {
